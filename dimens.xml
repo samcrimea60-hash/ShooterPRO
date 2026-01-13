@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Базовые размеры (увеличены в 1.8 раза) -->
+    <dimen name="text_tiny">10sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">20sp</dimen>
+    <dimen name="text_xxlarge">24sp</dimen>
+    <dimen name="text_huge">28sp</dimen>
+    <dimen name="text_massive">32sp</dimen>
+
+    <!-- Адаптивные отступы -->
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">12dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="padding_xlarge">20dp</dimen>
+    <dimen name="padding_xxlarge">24dp</dimen>
+
+    <!-- Размеры кнопок -->
+    <dimen name="button_height_small">44dp</dimen>
+    <dimen name="button_height_medium">52dp</dimen>
+    <dimen name="button_height_large">60dp</dimen>
+
+    <!-- Высоты элементов -->
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="spinner_height">48dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+
+    <!-- Размеры для планшетов -->
+    <!-- ИСПРАВЛЕННЫЕ СТРОКИ (вариант 1): -->
+    <dimen name="tablet_text_multiplier">1.2sp</dimen>
+    <dimen name="tablet_padding_multiplier">1.3dp</dimen>
+    <dimen name="tablet_max_width">500dp</dimen>
+</resources>

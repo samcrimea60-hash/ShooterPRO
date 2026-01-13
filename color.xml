@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные цвета -->
+    <color name="background_dark">#FF0A192F</color>
+    <color name="background_card">#FF2A3B5A</color>
+    <color name="primary_mint">#FF4FD1C7</color>
+    <color name="primary_lavender">#FF9F7AEA</color>
+    <color name="primary_sand">#FFECC94B</color>
+    <color name="primary_coral">#FFF56565</color>
+
+    <!-- Цвета для текста -->
+    <color name="text_primary">#FFE2E8F0</color>
+    <color name="text_secondary">#FFA0AEC0</color>
+
+    <!-- Дополнительные цвета -->
+    <color name="border_light">#334A5568</color>
+    <color name="button_primary_normal">#FF9F7AEA</color>
+    <color name="button_primary_pressed">#FF805AD5</color>
+</resources>

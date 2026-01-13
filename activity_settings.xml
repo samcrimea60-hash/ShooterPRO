@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙ НАСТРОЙКИ"
+            android:textColor="@color/primary_mint"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Информация о пользователе -->
+        <TextView
+            android:id="@+id/shooterInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Спортсмен: Иван Иванов"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Таймеры -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="⏱ ТАЙМЕРЫ ДЛЯ ТРЕНИРОВКИ"
+                android:textColor="@color/primary_mint"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Контейнер для списка таймеров -->
+            <LinearLayout
+                android:id="@+id/timersList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="100dp"
+                android:background="@color/background_dark"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Форма добавления нового таймера -->
+            <EditText
+                android:id="@+id/timerNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Название таймера (например: Разминка)"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:backgroundTint="@color/primary_mint"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <EditText
+                    android:id="@+id/timerMinutesInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Минуты"
+                    android:inputType="number"
+                    android:textColor="@color/text_primary"
+                    android:backgroundTint="@color/primary_mint"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginEnd="8dp"/>
+
+                <EditText
+                    android:id="@+id/timerSecondsInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Секунды"
+                    android:inputType="number"
+                    android:textColor="@color/text_primary"
+                    android:backgroundTint="@color/primary_mint"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/addTimerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="➕ ДОБАВИТЬ ТАЙМЕР"
+                android:backgroundTint="@color/primary_lavender"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="8dp"/>
+
+            <CheckBox
+                android:id="@+id/sequentialTimersCheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Запускать таймеры последовательно перед тренировкой"
+                android:textColor="@color/text_primary"
+                android:checked="true"/>
+        </LinearLayout>
+
+        <!-- Управление данными -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🗃 УПРАВЛЕНИЕ ДАННЫМИ"
+                android:textColor="@color/primary_mint"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/manageDataButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🗑 УПРАВЛЕНИЕ ДАННЫМИ..."
+                android:backgroundTint="@color/primary_coral"
+                android:textColor="@color/text_primary"/>
+
+            <Button
+                android:id="@+id/exportButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📤 ЭКСПОРТ СТАТИСТИКИ (PDF)"
+                android:backgroundTint="@color/primary_sand"
+                android:textColor="@color/background_dark"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/backupButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💾 СОЗДАТЬ РЕЗЕРВНУЮ КОПИЮ"
+                android:backgroundTint="@color/primary_mint"
+                android:textColor="@color/background_dark"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Напоминания -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔔 НАПОМИНАНИЯ О ТРЕНИРОВКАХ"
+                android:textColor="@color/primary_mint"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp"/>
+
+            <CheckBox
+                android:id="@+id/remindersEnabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Включить напоминания"
+                android:textColor="@color/text_primary"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Время напоминания:"
+                    android:textColor="@color/text_primary"/>
+
+                <Button
+                    android:id="@+id/reminderTimeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19:00"
+                    android:backgroundTint="@color/background_dark"/>
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/reminderDaysSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/primary_mint"/>
+        </LinearLayout>
+
+        <!-- Дополнительно -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background_card"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔧 ДОПОЛНИТЕЛЬНО"
+                android:textColor="@color/primary_mint"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/changeShooterButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="👤 СМЕНИТЬ СПОРТСМЕНА"
+                android:backgroundTint="@color/primary_lavender"
+                android:textColor="@color/text_primary"/>
+
+            <Button
+                android:id="@+id/resetSettingsButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔄 СБРОС НАСТРОЕК"
+                android:backgroundTint="@color/background_dark"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/aboutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ℹ️ О ПРИЛОЖЕНИИ"
+                android:backgroundTint="@color/background_dark"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Сохранить -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💾 СОХРАНИТЬ ВСЕ НАСТРОЙКИ"
+            android:backgroundTint="@color/primary_mint"
+            android:textColor="@color/background_dark"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Назад -->
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="← НАЗАД В КАЛЕНДАРЬ"
+            android:backgroundTint="@color/background_card"
+            android:textColor="@color/text_primary"/>
+
+    </LinearLayout>
+</ScrollView>

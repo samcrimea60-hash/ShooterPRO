@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Минимальная тема без библиотек -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar.Fullscreen">
+        <!-- Все уже настроено в родительской теме -->
+    </style>
+</resources>

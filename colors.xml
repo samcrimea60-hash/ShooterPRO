@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Основные цвета приложения -->
+    <color name="background">#0A192F</color>
+    <color name="dark_blue">#071224</color>
+    <color name="teal">#4FD1C7</color>
+    <color name="purple">#9F7AEA</color>
+    <color name="yellow">#ECC94B</color>
+    <color name="red">#F56565</color>
+    <color name="gray">#4A5568</color>
+    <color name="light_gray">#A0AEC0</color>
+    <color name="white">#FFFFFF</color>
+</resources>
